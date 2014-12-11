@@ -10,10 +10,11 @@
 
     <title>JPO</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="js/diagrammes.js"></script>
   </head>
 
   <body>
@@ -55,20 +56,20 @@
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+              <center><div id="participants"></div></center>
               <h4>Participants</h4>
-              <!--<span class="text-muted">Something else</span>-->
+              <!--<span class="text-muted">Sous Titre</span>-->
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+             <center><div id="age"></div></center>
               <h4>Age</h4>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+              <center><div id="ville"></div></center>
               <h4>Ville</h4>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+              <center><div id="interet"></div></center>
               <h4>Intéret</h4>
             </div>
           </div>
@@ -134,9 +135,7 @@
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/docs.min.js"></script>
