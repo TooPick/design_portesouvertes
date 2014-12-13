@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>JPO</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type="text/javascript" src="js/exemples.js"></script>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Journée Portes Ouvertes</a>
+		  <a class="navbar-brand" href="http://iut.univ-amu.fr/diplomes/dut-informatique-site-darles">Arles</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="acceuil.html">Tableau de bord</a></li>
+            <li><a href="connection.html">Déconnexion</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="acceuil.html"><div  class="glyphicon glyphicon-home" aria-hidden="true"></div> Acceuil</a></li>
+            <li class="active"><a href="genererStats.html"><div  class="glyphicon glyphicon-cog" aria-hidden="true"></div> Générer les stats</a></li>
+            <li><a href="defJPO.html"><div  class="glyphicon glyphicon-time" aria-hidden="true"></div> Définir JPO</a></li>
+            <li><a href="#"><div  class="glyphicon glyphicon-edit" aria-hidden="true"></div> Editer le sondage</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<h2>Votre requète: </h2>
+			<hr>
+			<form class="form-inline" role="form">
+				  <div class="form-group col-sm-3 col-md-offset-1">
+					<div class="input-group">
+						<label>Qui: </label>
+						<br>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Info 1
+							</label>
+						</div>
+						<br>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Info 2
+							</label>
+						</div>
+						<br>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> MMI 1
+							</label>
+						</div>
+						<br>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> MMI 2
+							</label>
+						</div>
+						<br>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> LPs ATC
+							</label>
+						</div>
+						<br>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> LP SIL IN
+							</label>
+						</div>
+					</div>
+				  </div>
+				  <div class="form-group col-sm-3 col-md-offset-1">
+					<div class="input-group">
+						<div class="input-group">
+							<label>Quoi: </label>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Nom
+								</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Prénom
+								</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Age
+								</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Ville
+								</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Formation intéressée
+								</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Votre question ?
+								</label>
+							</div>
+						</div>
+					</div>
+				  </div>
+				  <div class="form-group col-sm-3 col-md-offset-1">
+					<div class="input-group">
+						<div class="input-group">
+							<label>Comment: </label>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Tableau
+								</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Graphique Circulaire
+								</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Graphique Histogramme
+								</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Graphique Courbe
+								</label>
+							</div>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Graphique Aire
+								</label>
+							</div>
+							<br><br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> 3D
+								</label>
+							</div>
+						</div>
+					</div>
+				  </div>
+				<center class="col-sm-12"><br><br><button type="button" class="btn btn-success">Valider</button></center>
+			</form>
+			<div class="form-group col-sm-12">
+				<h2>Resultats: </h2>
+				<hr>
+				<center><div id="circular"></div></center>
+				<hr>
+				<center><div id="histogramme"></div></center>
+			</div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/docs.min.js"></script>
+  </body>
+</html>
