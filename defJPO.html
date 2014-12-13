@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>JPO</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+	
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Journée Portes Ouvertes</a>
+		  <a class="navbar-brand" href="http://iut.univ-amu.fr/diplomes/dut-informatique-site-darles">Arles</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="acceuil.html">Tableau de bord</a></li>
+            <li><a href="connection.html">Déconnexion</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="acceuil.html"><div  class="glyphicon glyphicon-home" aria-hidden="true"></div> Acceuil</a></li>
+            <li><a href="genererStats.html"><div  class="glyphicon glyphicon-cog" aria-hidden="true"></div> Générer les stats</a></li>
+            <li class="active"><a href="defJPO.html"><div  class="glyphicon glyphicon-time" aria-hidden="true"></div> Définir JPO</a></li>
+            <li><a href="#"><div  class="glyphicon glyphicon-edit" aria-hidden="true"></div> Editer le sondage</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<div class="col-md-6">
+			<h2 class="sub-header">Sondage de la Journée Porte Ouverte</h2>
+				<form class="form-inline" role="form">
+				  <div class="form-group">
+					<div class="input-group">
+						<div class="input-group-addon">Début</div>
+						<input type="datetime-local" class="form-control" required>
+					</div>
+				  </div>
+				  <div class="form-group">
+					<div class="input-group">
+						<div class="input-group-addon">Fin  </div>
+						<input type="datetime-local" class="form-control" required>
+					</div>
+				  </div>
+				  <br><br>
+				<center><button type="button" class="btn btn-success ">Valider</button></center>
+				</form>
+				<hr>
+				<form>
+					<div class="form-group">
+						<label>Entrez la question</label>
+						<input type="text" class="form-control form-group" placeholder="votre question ?">
+					</div>
+				</form>
+				<button type="button" class="btn btn-success " title="Ajouter une question"><div class="glyphicon glyphicon-plus"  aria-hidden="true"></div></button>
+				<button type="button" class="btn btn-danger " title="Supprimer une question"><div class="glyphicon glyphicon-minus"  aria-hidden="true"></div></button>
+				<br><br>
+				<center><button type="button" class="btn btn-success ">Valider</button></center>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+			<h2>Avant-vu du sondage</h2>
+				<form class="jumbotron">
+					<center><h3>Bienvenue aux JPO d'Arles</h3></center>
+					<hr>
+					<div class="form-group">
+						<label>Nom</label>
+						<input type="text" class="form-control form-group" placeholder="Norris">
+					</div>
+					<div class="form-group">
+						<label>Prénom</label>
+						<input type="text" class="form-control form-group" placeholder="Chuck">
+					</div>
+					<div class="form-group">
+						<label>Age</label>
+						<input type="text" class="form-control form-group" placeholder="18">
+					</div>
+					
+					<div class="form-group">
+						<label>Ville</label>
+						<input type="text" class="form-control form-group" placeholder="Arles">
+					</div>
+					<div class="form-group form-inline">
+						<label>Formation intéressée</label>
+						<select class="form-control form-group">
+							<option>...</option>
+							<option>Info 1</option>
+							<option>Info 2</option>
+							<option>MMI 1</option>
+							<option>MMI 2</option>
+							<option>LPs ATC</option>
+							<option>LP SIL IN</option>
+						</select>
+					</div>
+					<br>
+					<center>
+						<button type="button" class="btn btn-success ">Valider</button>
+						<button type="button" class="btn btn-danger ">Annuler</button>
+					</center>
+				</form>
+			</div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/docs.min.js"></script>
+  </body>
+</html>

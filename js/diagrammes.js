@@ -25,8 +25,8 @@
 
       // Options
       var options = {'title':'',
-                    /* 'width':200 ,
-                     'height':200,*/
+					 'chartArea':'0',
+					 'chartArea	':'0',
 					 'legend':'none',
 					 'is3D':'true'
 					 };
@@ -52,8 +52,6 @@
 
       // Options
       var options = {'title':'',
-                    /* 'width':200 ,
-                     'height':200,*/
 					 'legend':'none',
 					 'is3D':'true'
 					 };
@@ -80,8 +78,6 @@
 
       // Options
       var options = {'title':'',
-                     /*'width':200 ,
-                     'height':200,*/
 					 'legend':'none',
 					 'is3D':'true'
 					 };
@@ -108,8 +104,6 @@
 
       // Options
       var options = {'title':'',
-                    /* 'width':200 ,
-                     'height':200,*/
 					 'legend':'none',
 					 'is3D':'true'
 					 };
