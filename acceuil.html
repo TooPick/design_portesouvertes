@@ -34,7 +34,16 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="acceuil.html">Tableau de bord</a></li>
+            <li>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tableau de bord<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li class="active"><a href="acceuil.html"><div  class="glyphicon glyphicon-home" aria-hidden="true"></div></a></li>
+					<li><a href="genererStats.html"><div  class="glyphicon glyphicon-cog" aria-hidden="true"></div></a></li>
+					<li><a href="defJPO.html"><div  class="glyphicon glyphicon-time" aria-hidden="true"></div></a></li>
+					<li><a href="#"><div  class="glyphicon glyphicon-edit" aria-hidden="true"></div></a></li>
+				</ul>
+				
+			</li>
             <li><a href="connection.html">Déconnexion</a></li>
             <li><a href="about.html">À propos</a></li>
           </ul>
@@ -85,7 +94,7 @@
                   <th>Prénom</th>
                   <th>Age</th>
                   <th>Ville</th>
-                  <th>Intéret</th>
+                  <th>Formation intéressée</th>
                 </tr>
               </thead>
               <tbody>

@@ -103,3 +103,16 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+/*******/
+.icon{
+	width:30px;
+	height: 30px;
+}
+.text-muted{
+	font-size: 0.5em;
+	font-weight: bold;
+}
+.correction{
+	font-size: 0.6em;
+}

@@ -33,7 +33,16 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="acceuil.html">Tableau de bord</a></li>
+            <li>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tableau de bord<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="acceuil.html"><div  class="glyphicon glyphicon-home" aria-hidden="true"></div></a></li>
+					<li class="active"><a href="genererStats.html"><div  class="glyphicon glyphicon-cog" aria-hidden="true"></div></a></li>
+					<li><a href="defJPO.html"><div  class="glyphicon glyphicon-time" aria-hidden="true"></div></a></li>
+					<li><a href="#"><div  class="glyphicon glyphicon-edit" aria-hidden="true"></div></a></li>
+				</ul>
+				
+			</li>
             <li><a href="connection.html">Déconnexion</a></li>
             <li><a href="about.html">À propos</a></li>
           </ul>
@@ -100,6 +109,12 @@
 					<div class="input-group">
 						<div class="input-group">
 							<label>Quoi: </label>
+							<br>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Nombre
+								</label>
+							</div>
 							<br>
 							<div class="checkbox">
 								<label>
@@ -187,24 +202,104 @@
 			<div class="form-group col-sm-12">
 				<h2>Resultats: </h2>
 				<hr>
-				<center>
-					<h3>Graphique Circulaire<h3>
-					<div id="circular"></div>
+				<center  class="jumbotron">
+					<h3>Tableau<h3>
+					<div class="table-responsive">
+					<table class="table table-striped correction">
+					  <thead>
+						<tr>
+						  <th>#</th>
+						  <th>Nom</th>
+						  <th>Prénom</th>
+						  <th>Age</th>
+						  <th>Ville</th>
+						  <th>Intéret</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>1</td>
+						  <td>Dumas</td>
+						  <td>Alexandre</td>
+						  <td>18</td>
+						  <td>Avignon</td>
+						  <td>Info2</td>
+						</tr>
+						<tr>
+						  <td>2</td>
+						  <td>Fer</td>
+						  <td>Lucy</td>
+						  <td>17</td>
+						  <td>Maseille</td>
+						  <td>MMI1</td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td>Don</td>
+						  <td>Juan</td>
+						  <td>19</td>
+						  <td>Arles</td>
+						  <td>Info2</td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td>Miss</td>
+						  <td>Fortune</td>
+						  <td>18</td>
+						  <td>Nîmes</td>
+						  <td>Info1</td>
+						</tr>
+						<tr>
+						  <td>4</td>
+						  <td>Norris</td>
+						  <td>Chuck</td>
+						  <td>20</td>
+						  <td>terre</td>
+						  <td>MMI2</td>
+						</tr>
+					  </tbody>
+					</table>
+					</div>
+					<span class="text-muted">Télécharger</span>
+					<a href="#"><img src="css/excel.png" class="img-rounded icon" title="Télécharger au format EXCEL (.xls)"/></a>
+					<a href="#"><img src="css/pdf.png" class="img-rounded icon"  title="Télécharger au format PDF (.pdf)"/></a>
+					<a href="#"><img src="css/openoffice.png" class="img-rounded icon" title="Télécharger au format Open Office Tableur (.ods)"/></a>
 				</center>
 				<hr>
-				<center>
+				<center  class="jumbotron">
+					<h3>Graphique Circulaire<h3>
+					<div id="circular" style="border-radius: 5px;"></div>
+					<span class="text-muted">Télécharger</span>
+					<a href="#"><img src="css/excel.png" class="img-rounded icon" title="Télécharger au format EXCEL (.xls)"/></a>
+					<a href="#"><img src="css/pdf.png" class="img-rounded icon"  title="Télécharger au format PDF (.pdf)"/></a>
+					<a href="#"><img src="css/openoffice.png" class="img-rounded icon" title="Télécharger au format Open Office Tableur (.ods)"/></a>
+				</center>
+				<hr>
+				<center  class="jumbotron">
 					<h3>Graphique Histogramme<h3>
 					<div id="histogramme"></div>
+					<span class="text-muted">Télécharger</span>
+					<a href="#"><img src="css/excel.png" class="img-rounded icon" title="Télécharger au format EXCEL (.xls)"/></a>
+					<a href="#"><img src="css/pdf.png" class="img-rounded icon"  title="Télécharger au format PDF (.pdf)"/></a>
+					<a href="#"><img src="css/openoffice.png" class="img-rounded icon" title="Télécharger au format Open Office Tableur (.ods)"/></a>
 				</center>
 				<hr>
-				<center>
+				<center  class="jumbotron">
 					<h3>Graphique Courbe<h3>
 					<div id="aire"></div>
+					<span class="text-muted">Télécharger</span>
+					<a href="#"><img src="css/excel.png" class="img-rounded icon" title="Télécharger au format EXCEL (.xls)"/></a>
+					<a href="#"><img src="css/pdf.png" class="img-rounded icon"  title="Télécharger au format PDF (.pdf)"/></a>
+					<a href="#"><img src="css/openoffice.png" class="img-rounded icon" title="Télécharger au format Open Office Tableur (.ods)"/></a>
 				</center>
 				<hr>
-				<center>
+				<center  class="jumbotron">
 					<h3>Graphique Carte<h3>
 					<div id="map"></div>
+					<span class="text-muted">Télécharger</span>
+					<a href="#"><img src="css/excel.png" class="img-rounded icon" title="Télécharger au format EXCEL (.xls)"/></a>
+					<a href="#"><img src="css/pdf.png" class="img-rounded icon"  title="Télécharger au format PDF (.pdf)"/></a>
+					<a href="#"><img src="css/openoffice.png" class="img-rounded icon" title="Télécharger au format Open Office Tableur (.ods)"/></a>
 				</center>
 			</div>
         </div>

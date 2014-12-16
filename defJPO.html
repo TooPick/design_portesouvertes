@@ -31,7 +31,16 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="acceuil.html">Tableau de bord</a></li>
+            <li>
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tableau de bord<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="acceuil.html"><div  class="glyphicon glyphicon-home" aria-hidden="true"></div></a></li>
+					<li><a href="genererStats.html"><div  class="glyphicon glyphicon-cog" aria-hidden="true"></div></a></li>
+					<li class="active"><a href="defJPO.html"><div  class="glyphicon glyphicon-time" aria-hidden="true"></div></a></li>
+					<li><a href="#"><div  class="glyphicon glyphicon-edit" aria-hidden="true"></div></a></li>
+				</ul>
+				
+			</li>
             <li><a href="connection.html">Déconnexion</a></li>
             <li><a href="about.html">À propos</a></li>
           </ul>
@@ -71,7 +80,7 @@
 				<hr>
 				<form>
 					<div class="form-group">
-						<label>Entrez la question</label>
+						<label>Entrez la question à rajouter au sondage</label>
 						<input type="text" class="form-control form-group" placeholder="votre question ?">
 					</div>
 				</form>
